@@ -1,0 +1,36 @@
+{
+  "name": "get-active-window",
+  "version": "1.0.0",
+  "description": "Get active window in windows, linux and mac.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anuroop0003/get-active-window.git"
+  },
+  "keywords": [
+    "active-window"
+  ],
+  "author": "Anuroop K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anuroop0003/get-active-window/issues"
+  },
+  "homepage": "https://github.com/anuroop0003/get-active-window#readme",
+  "binary": {
+    "module_name": "node-get-windows",
+    "module_path": "/src/main/activeWindow/lib/binding/napi-{napi_build_version}-{platform}-{libc}-{arch}",
+    "host": "https://github.com/sindresorhus/get-windows",
+    "remote_path": "v{version}",
+    "package_name": "napi-{napi_build_version}-{platform}-{libc}-{arch}.tar.gz",
+    "napi_versions": [
+      9
+    ]
+  },
+  "dependencies": {
+    "@mapbox/node-pre-gyp": "^1.0.11"
+  }
+}
